@@ -29,12 +29,6 @@
     }
 }
 
-@media (min-width: 568px) {
-    .reference-contacts-list li {
-        width: 33.33333333333%;
-    }
-}
-
 /* basic settings */
 html {
     height: 100%;
@@ -63,8 +57,6 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
-
-
 
 /* icons settings */
 div[class*="ic-"],
@@ -147,38 +139,12 @@ span.ic-facebook {
 span.ic-twitter {
     background-position: 0 -501px;
 }
-
-/* reference page icons main content */
-div.ic-reference {
-    background-position: -114px -501px;
-    width: 83px;
-    height: 93px;
+/* cover letter icons */
+div.ic-cover-letter {
+    width: 82px;
+    height: 94px;
+    background-position: 0 -718px;
     float: left;
-}
-
-i.ic-contact-phone,
-i.ic-contact-web,
-i.ic-contact-position {
-    width: 53px;
-    height: 60px;
-}
-
-i.ic-contact-phone {
-    background-position: 0 -564px;
-}
-
-i.ic-contact-web {
-    background-position: -53px -564px;
-}
-
-i.ic-contact-position {
-    background-position: -106px -594px;
-}
-
-i.ic-figure-centre {
-    width: 26px;
-    height: 28px;
-    background-position: -167px -596px;
 }
 
 /*------------------------------
@@ -394,104 +360,50 @@ h3.title-main-content {
     margin-right: -100%;
 }
 
-.reference-main-list > li {
-    clear: both;
-    margin: 0 0 50px 0;
+/* cover letter box */
+
+.cover-letter {
+    margin: 50px 0 0 0px;
+    padding: 0 50px 0 62px;
+}
+
+.cover-header-l-side {
+    width: 45%;
     float: left;
+    font: 18px/24px Open Sans Light;
+    color: #40485d;
+}
+
+.cover-header-r-side {
+    width: 45%;
+    float: right;
+    font: 16px/24px Open Sans;
+    color: #40485d;
+    text-align: right;
+}
+
+.cover-letter-text {
+    clear: both;
+    margin: 97px 0 0 0;
+    float: left;
+    font: 20px/24px Open Sans;
+    color: #40485d;
+    text-align: justify;
+}
+
+.cover-letter-text p {
+    margin: 0 0 25px 0;
+    clear: both;
+}
+
+.cover-letter-text ul {
+    margin: 10px 0 30px 48px;
+    float: left;
+}
+
+.cover-letter-text ul li {
+    background: url("/images/black-list-bullet.png") 0 6px no-repeat;
+    padding: 0 0 0 28px;
     list-style: none;
-}
-
-.quote-block {
-    margin: 50px 0 0 41px;
-
-}
-
-.left-quote {
-    float: left;
-    background: url("/images/left-quote.png") 0 40% no-repeat;
-    margin: 0 0 30px 0;
-}
-
-.right-quote {
-    float: left;
-    background: url("/images/right-quote.png") 100% 40% no-repeat;
-}
-
-.quote-text {
-    width: 93%;
-    text-align: center;
-    font: 16px/20px Open Sans;
-    color: #313749;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .quote-text {
-        width: 80%;
-    }
-}
-
-.reference-author-block {
-    text-align: center;
-    font: 20px/22px Open Sans;
-    color: #313749;
-    text-transform: uppercase;
-    clear: both;
-
-}
-
-.reference-contacts-list {
-    margin: 40px 0 0 0;
-    clear: both;
-    float: left;
-}
-
-.reference-contacts-list li {
-    list-style: none;
-    margin: 0 0 10px 0;
-}
-
-.reference-contacts-list li i {
-    display: block;
-    margin: 0 auto 13px auto;
-}
-
-.reference-contacts-list li span {
-    font: 16px/18px Open Sans;
-    color: #313749;
-    display: block;
-    text-align: center;
-    padding: 0 10px;
-}
-
-/* title finish block */
-.wrap-title-finish-block {
-    margin: 50px 0 0 0;
-    float: left;
-    clear: both;
-    width: 100%;
-}
-
-.title-finish-block {
-    overflow: hidden;
-    clear: both;
-    text-align: center;
-}
-.title-finish-block:before,
-.title-finish-block:after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    width: 100%;
-    height: 4px;
-    background: #313749;
-    border: solid #FFF;
-    border-width: 0 10px;
-}
-.title-finish-block:before {
-    margin-left: -100%;
-}
-.title-finish-block:after {
-    margin-right: -100%;
+    margin: 0 0 6px 0;
 }
