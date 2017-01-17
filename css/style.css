@@ -116,13 +116,13 @@ a:hover {
 div[class*="ic-"], span[class*="ic-"] {
     display: inline-block;
     vertical-align: middle;
-    background: url("/images/sprite.png") no-repeat;
+    background: url("../images/sprite.png") no-repeat;
 }
 
 i.ic-dark-blue-bullet {
     width: 11px;
     height: 11px;
-    background: url("/images/black-list-bullet.png") 0 0 no-repeat;
+    background: url("../images/black-list-bullet.png") 0 0 no-repeat;
     float: left;
     margin: 3px 16px 0 0;
 }
@@ -461,7 +461,7 @@ h3.title-main-content {
     width: 98%;
     list-style: none;
     padding: 0 0 0 25px;
-    background: url("/images/black-list-bullet.png") 0 3px no-repeat;
+    background: url("../images/black-list-bullet.png") 0 3px no-repeat;
     font: 16px/18px Open Sans;
     color: #6d6967;
     margin: 0 0 20px 0;

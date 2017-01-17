@@ -37,9 +37,9 @@ a:active{}
 
 html, body{width:100%; height:100%; text-align:center;}
 
-#main{width:100%;	min-height:100%; height:auto !important; background: #fff url(../images/main_bg.jpg) 0 0 repeat-x;	height:100%; margin:0 auto -164px;  text-align:left;}
+#main{width:100%;	min-height:100%; height:auto !important; background: #fff url(./images/main_bg.jpg) 0 0 repeat-x;	height:100%; margin:0 auto -164px;  text-align:left;}
 
-#header{width:100%; height:229px; background:url(../images/header_bg.png) 0 24px no-repeat;  }
+#header{width:100%; height:229px; background:url(./images/header_bg.png) 0 24px no-repeat;  }
 	
 #content{ width:100%;  float:left; padding:0 0 20px 0;  }
 					
