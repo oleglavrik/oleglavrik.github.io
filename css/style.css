@@ -3,18 +3,33 @@
 
 /* import fonts */
 @font-face {
-    font-family: Open Sans;
-    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular.eot');
+    src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-regular.woff2') format('woff2'),
+    url('../fonts/opensans-regular.woff') format('woff'),
+    url('../fonts/opensans-regular.ttf')  format('truetype'),
+    url('../fonts/opensans-regular.svg#svgFontName') format('svg');
 }
 
 @font-face {
-    font-family: Open Sans Light;
-    src: url(../fonts/OpenSans-Light.ttf);
+    font-family: 'Open Sans Light';
+    src: url('../fonts/opensans-light.eot');
+    src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-light.woff2') format('woff2'),
+    url('../fonts/opensans-light.woff') format('woff'),
+    url('../fonts/opensans-light.ttf')  format('truetype'),
+    url('../fonts/opensans-light.svg#svgFontName') format('svg');
 }
 
 @font-face {
-    font-family: Open Sans Semibold;
-    src: url(../fonts/OpenSans-Semibold.ttf);
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/opensans-semibold.eot');
+    src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-semibold.woff2') format('woff2'),
+    url('../fonts/opensans-semibold.woff') format('woff'),
+    url('../fonts/opensans-semibold.ttf')  format('truetype'),
+    url('../fonts/opensans-semibold.svg#svgFontName') format('svg');
 }
 
 /* media query settings */
@@ -26,6 +41,12 @@
 
     #wrapper {
         overflow: hidden;
+    }
+}
+
+@media (max-width: 320px) {
+    .personal-skills-list li {
+        clear: both;
     }
 }
 
@@ -49,8 +70,12 @@ ul {
 }
 
 a {
-    color: #6d6967;
+    color: #fff;
     text-decoration: none;
+}
+
+a:focus {
+    color: #fff;
 }
 
 a:hover {
@@ -104,7 +129,7 @@ i.ic-dark-blue-bullet {
 
 /*icon bg positions */
 div.ic-profile {
-    background-position: 0 0;
+    background-position: -83px -719px;
     width: 83px;
     height: 93px;
     float: left;
@@ -167,6 +192,10 @@ span.ic-twitter {
     background-position: 0 -501px;
 }
 
+span.ic-github {
+    background-position: -57px -501px;
+}
+
 div.ic-personal-skills {
     background-position: 0 -188px;
     width: 83px;
@@ -188,6 +217,19 @@ div.ic-user-proficiency {
     float: left;
 }
 
+div.ic-languages {
+    background-position: 0 -718px;
+    width: 83px;
+    height: 93px;
+    float: left;
+}
+
+div.ic-certificates {
+    background-position: -114px -501px;
+    width: 83px;
+    height: 93px;
+    float: left;
+}
 /*------------------------------
     LEFT SIDEBAR
 -------------------------------*/
@@ -283,9 +325,17 @@ h3.title-l-sidebar {
     font: 16px/22px Open Sans;
     color: #fff;
     clear: both;
-    width: 80%;
+    width: 79%;
     float: left;
     margin: 24px 0 0 65px;
+}
+
+.l-sidebar-profile-text a {
+    text-decoration: underline;
+}
+
+.l-sidebar-profile-text a:hover {
+    text-decoration: none;
 }
 
 .contact-wrap {
@@ -417,10 +467,19 @@ h3.title-main-content {
     margin: 0 0 20px 0;
 }
 
-.user-experience-list li div {
+.user-experience-list li h1 {
     text-transform: uppercase;
     padding: 0 0 5px 0;
     letter-spacing: 3px;
+}
+
+.user-experience-list li a {
+    color: #505262;
+    text-decoration: underline;
+}
+
+.user-experience-list li a:hover {
+    text-decoration: none;
 }
 
 .user-experience-list li div i {

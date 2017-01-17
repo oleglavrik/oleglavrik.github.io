@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>The MyCollections - Home</title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/index_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/errorBox_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.formstyler.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		</head>
+	<body>
+		<!-- FON IMAGES -->
+		<div class="fon_bg">
+			<img src="images/index-background-1.jpg"/>
+		</div>
+		<!-- END FON IMAGES -->
+		<section id="main">
+			<header id="header">
+				<section class="headerInner">
+					<div class="logoWrap">
+						<a href="index.php" class="logo"><img src="images/indexLogo.png" /></a>
+					</div>
+					<div class="indexFaqWrap"><a href="#" class="indexFaq">What is the MyCollections?</a></div>
+					<div class="enter_user_block">
+						<a href="#" class="enter_user_link">Sign In</a>
+					</div>
+					<div class="select_language_block" style="display: none;">
+						<a href="#" class="select_language"><?php echo langGetFullNameByShortName(); ?></a>
+					</div>
+					<!-- POPUP USER ENTER BLOCK -->
+					<div class="popup bottom popup_entry_user" style="margin: 106px 0 0 655px; height: auto !important;">
+						<div class="popupEntryUserInner">
+							<form action="" id="signForm" class="signForm greenCheckboxType2">
+								<div>
+									<input type="text" name="signEmail" id="signEmail" value="E-mail" onfocus="if(this.value=='E-mail')this.value=''" onblur="if(this.value=='')this.value='E-mail'" class="signFormText" />
+								</div>
+								<div>
+									<input type="text" name="signPassword" id="fakeSignPassword"  value="Password" onfocus="if(this.value=='Password')this.value=''" onblur="if(this.value=='')this.value='Password'" class="signFormText" />
+									<input style="display: none;" type="password" name="signPassword" id="signPassword"  value="" class="signFormText" />
+								</div>
+								<div class="signFormLeftBox">
+									<input type="checkbox" name="signRememberMe" id="signRememberMe"/>
+									<span>Remember me</span>
+									<a href="#" class="recoverPassword">Forgot password?</a>
+								</div>
+								<div class="signFormRightBox">
+									<input type="submit" class="signFormButton" name="signSumbit" value="Sign"/>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- END POPUP USER ENTER BLOCK -->
+					<!-- POPUP LANGUAGE LIST -->
+					<div class="popup bottom popupLanguageBox" style="margin: 106px 0 0 599px;">
+						<div class="popupLanguageBoxInner">
+							<ul class="language_list">
+								<li>
+									<a href="#">English</a>
+								</li>
+								<li>
+									<a href="#">Ukrainian</a>
+								</li>
+								<li>
+									<a href="#">Russian</a>
+								</li>		
+							</ul>
+						</div>
+					</div>
+					<!--END POPUP LANGUAGE LIST -->
+					<!--BEGIN POPUP WHAT IS THE MYCOLLECTION -->
+					<div class="popup topArrowBlock popup_about_company" style="margin: 106px 0 0 -7px; width: 939px;  height: 510px;">
+						<div class="popupAbotCompanyInner">
+
+						</div>
+					</div>
+					<!--END POPUP WHAT IS THE MYCOLLECTION -->
+				</section>
+			</header>
+			<section id="content">
+				<section class="index_content_block">
+					<!-- Begin wellcome box -->
+					<div class="wellcomeBox">
+						<img src="images/indexWelcome.png" alt="" title="" />
+					</div>
+					<!-- End wellcome box -->
+					<!-- Begin descriptions service box -->
+					<div class="descServiseBox">
+						<span>Organize Your online collection.</span>
+						<span>Share it with the World!</span>
+					</div>
+					<!-- End descriptions service box -->
+					<!-- Begin register box -->
+					<section class="registerBox">
+						<div class="registerBoxInner">
+							<h2>Are you not with us? Then come  join us.</h2>
+							<form id="regForm" class="registerForm">
+								<div>
+									<input id="regFullName" type="text" name="" value="Full Name"  onfocus="if(this.value=='Full Name')this.value=''" onblur="if(this.value=='')this.value='Full Name'"   class="registerFormText"/>
+								</div>
+								<div>
+									<input id="regEmail" type="text" name="" value="E-mail" onfocus="if(this.value=='E-mail')this.value=''" onblur="if(this.value=='')this.value='E-mail'" class="registerFormText"/>
+								</div>
+								<div>
+									<input type="text" name="fakepassword" id="fakepassword" value="Password" onfocus="if(this.value=='Password')this.value=''" onblur="if(this.value=='')this.value='Password'" class="registerFormText" />
+									<input id="regPassword" style="display: none" type="password" name="password" value=""   class="registerFormText" />
+								</div>
+								<div>
+									<input type="submit" name="" value="Register" class="registerFormButton"/>
+								</div>
+							</form>
+						</div>
+					</section>
+					<!-- End register box -->
+
+					<!-- FERATURES BLOCK -->
+					<div class="featuresBoxWrap">
+						<ul class="featuredList">
+							<li>
+								<div class="featuredNewsIco">
+									<a href="#"><img src="images/featuredIco1.png" alt="" /></a>
+								</div>
+								<div class="featuredDesc oldBrow">
+									<a href="/news">NEWS</a>
+									<span>
+										Lorem ipsum dolor sit amet, 
+										consectetuer  adipiscing elit. Nam 
+									</span>
+								</div> 
+							</li>
+							<li>
+								<div class="featuredLibraryIco">
+									<a href="#"><img src="images/featuredIco2.png" alt="" /></a>
+								</div>
+								<div class="featuredDesc oldBrow">
+									<a href="/library">LIBRARY</a>
+									<span>
+										Lorem ipsum dolor sit amet, 
+										consectetuer  adipiscing elit. Nam 
+									</span>
+								</div> 
+							</li>
+							<li>
+								<div class="featuredRatingIco">
+									<a href="#"><img src="images/featuredIco3.png" alt="" /></a>
+								</div>
+								<div class="featuredDesc oldBrow">
+									<a href="/rating">RATING</a>
+									<span>
+										Lorem ipsum dolor sit amet, 
+										consectetuer  adipiscing elit. Nam 
+									</span>
+								</div> 
+							</li>
+						</ul>
+					</div>
+					<!-- END FERATURES BLOCK -->
+				</section>
+			</section>    
+			<section class="footer_push"></section>
+		</section>
+		<footer id="footer">
+			<div class="footer-inner">  
+				<div class="footer_coppy">
+					Copyright &copy; 2013 TheMyCollections.com. All rights reserved.
+				</div>
+			</div>
+			<div class="designCopy">
+				<span>Design by</span>
+				<a target="blank" href="http://www.behance.net/LuckyWorks">LW</a>
+			</div>
+		</footer>
+	</body>
+</html>

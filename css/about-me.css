@@ -1,0 +1,531 @@
+/* set charset */
+@charset "UTF-8";
+
+/* import fonts */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular.eot');
+    src: url('../fonts/ opensans-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-regular.woff2') format('woff2'),
+    url('../fonts/opensans-regular.woff') format('woff'),
+    url('../fonts/opensans-regular.ttf')  format('truetype'),
+    url('../fonts/opensans-regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/opensans-light.eot');
+    src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-light.woff2') format('woff2'),
+    url('../fonts/opensans-light.woff') format('woff'),
+    url('../fonts/opensans-light.ttf')  format('truetype'),
+    url('../fonts/opensans-light.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/opensans-semibold.eot');
+    src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-semibold.woff2') format('woff2'),
+    url('../fonts/opensans-semibold.woff') format('woff'),
+    url('../fonts/opensans-semibold.ttf')  format('truetype'),
+    url('../fonts/opensans-semibold.svg#svgFontName') format('svg');
+}
+
+/* media query settings */
+@media (min-width: 992px) {
+    #l-sidebar {
+        padding-bottom: 32767px;
+        margin-bottom: -32767px;
+    }
+
+    #wrapper {
+        overflow: hidden;
+    }
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* basic settings */
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    font: 14px/20px 'Open Sans, Arial, Tahoma';
+    width: 100%;
+    height: 100%;
+    color: #6d6967;
+    background: #f8f6f6;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* icons settings */
+div[class*="ic-"],
+span[class*="ic-"],
+i[class*="ic-"] {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("/images/sprite.png") no-repeat;
+}
+
+i.ic-dark-blue-bullet {
+    width: 11px;
+    height: 11px;
+    background: url("/images/black-list-bullet.png") 0 0 no-repeat;
+    float: left;
+    margin: 3px 16px 0 0;
+}
+
+/*icons bg positions*/
+div.ic-profile {
+    background-position: -83px -719px;
+    width: 83px;
+    height: 93px;
+    float: left;
+}
+
+div.ic-contact {
+    background-position: -84px 0;
+    width: 83px;
+    height: 94px;
+    float: left;
+}
+
+span.ic-phone {
+    width: 57px;
+    height: 63px;
+    background-position: 0 -375px;
+    float: left;
+    margin: 0 17px 0 0;
+}
+
+span.ic-web {
+    width: 57px;
+    height: 63px;
+    background-position: -57px -375px;
+    float: left;
+    margin: 0 17px 0 0;
+}
+
+span.ic-location {
+    width: 57px;
+    height: 63px;
+    background-position: -114px -375px;
+    float: left;
+    margin: 0 17px 0 0;
+}
+
+div.ic-social-links {
+    background-position: -83px -282px;
+    width: 83px;
+    height: 93px;
+    float: left;
+}
+
+div.ic-work-experience {
+    background-position: -83px -94px;
+    width: 83px;
+    height: 93px;
+    float: left;
+}
+
+span.ic-linkedin {
+    background-position: -57px -438px;
+}
+
+span.ic-facebook {
+    background-position: -114px -438px;
+}
+
+span.ic-twitter {
+    background-position: 0 -501px;
+}
+
+span.ic-github {
+    background-position: -57px -501px;
+}
+
+/* cover letter icons */
+div.ic-cover-letter {
+    width: 82px;
+    height: 94px;
+    background-position: 0 -718px;
+    float: left;
+}
+/* portfolio icons */
+div.ic-portfolio {
+    background-position: 0 -624px;
+    width: 83px;
+    height: 93px;
+    float: left;
+}
+
+/*------------------------------
+    LEFT SIDEBAR
+-------------------------------*/
+#l-sidebar {
+    background: #313749;
+}
+
+#user-photo {
+    width: 169px;
+    height: 187px;
+    margin: 46px auto 20px auto;
+    position: relative;
+}
+
+#user-photo img {
+    width: 167px;
+    height: 187px;
+    display: block;
+    padding: 1px;
+    margin: 0 auto;
+}
+
+.photo-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 169px;
+    height: 200px;
+    background: url(../images/user-avatar-bg.png) no-repeat;
+}
+
+#user-name {
+    width: 90%;
+}
+
+#user-name span {
+    display: block;
+    text-align: center;
+    font: 34px/40px Open Sans Light;
+    color: #fff
+}
+
+#user-name b {
+    font-style: normal;
+    font-family: Open Sans Semibold;
+}
+
+#user-name i {
+    font-style: normal;
+    text-align: center;
+    display: block;
+    font: 22px/30px Open Sans;
+    color: #fff;
+}
+
+.big-title-l-sidebar {
+    margin: 48px 0 0 25px;
+}
+
+h3.title-l-sidebar {
+    text-transform: uppercase;
+    color: #fff;
+    font: 26px/32px Open Sans Semibold;
+    padding: 31px 0 0 0;
+}
+
+.title-l-sidebar {
+    overflow: hidden;
+}
+
+.title-l-sidebar:before,
+.title-l-sidebar:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border: solid #FFF;
+    border-width: 0 10px;
+}
+
+.title-l-sidebar:before {
+    margin-left: -100%;
+}
+
+.title-l-sidebar:after {
+    margin-right: -100%;
+}
+
+.l-sidebar-profile-text {
+    font: 16px/22px Open Sans;
+    color: #fff;
+    clear: both;
+    width: 79%;
+    float: left;
+    margin: 24px 0 0 65px;
+}
+
+.l-sidebar-profile-text a {
+    text-decoration: underline;
+}
+
+.l-sidebar-profile-text a:hover {
+    text-decoration: none;
+}
+
+.contact-wrap {
+    margin: 8px 0 0 0;
+    float: left;
+    width: 70%;
+}
+
+.l-sidebar-contact-info {
+    color: #fff;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: 19px 0 0 0;
+
+}
+
+.l-sidebar-contact-info ul {
+    margin: 0 0 0 21px;
+    width: 90%;
+}
+
+.l-sidebar-contact-info ul li {
+    font: 18px/24px Open Sans;
+    color: #fff;
+    list-style: none;
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+.l-sidebar-contact-info ul li span {
+    display: block;
+}
+
+.l-sidebar-social-links {
+    color: #fff;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: 19px 0 0 0;
+    padding: 0 0 20px 0;
+}
+
+.l-sidebar-social-links ul {
+    width: 90%;
+    margin: 0 0 0 21px;
+}
+
+.l-sidebar-social-links ul li {
+    list-style: none;
+    margin: 0 0 4px 0;
+    padding: 0;
+    float: left;
+    display: block;
+}
+
+.l-sidebar-social-links ul li span {
+    width: 57px;
+    height: 63px;
+    display: block;
+    float: left;
+    margin: 0 17px 0 0;
+}
+
+.social-link-wrap {
+    width: 70%;
+    float: left;
+}
+
+.l-sidebar-social-links ul li a {
+    font: 18px/24px Open Sans;
+    color: #fff;
+    margin: 19px 0 0 0;
+    float: left;
+}
+
+/*------------------------------
+    MAIN CONTENT
+-------------------------------*/
+.big-title-main-content {
+    margin: 46px 0 0 25px;
+}
+
+h3.title-main-content {
+    text-transform: uppercase;
+    color: #313749;
+    font: 26px/32px Open Sans Semibold;
+    padding: 31px 0 0 0;
+}
+
+.title-main-content {
+    overflow: hidden;
+}
+
+.title-main-content:before,
+.title-main-content:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4px;
+    background: #313749;
+    border: solid #313749;
+    border-width: 0 10px;
+}
+
+.title-main-content:before {
+    margin-left: -100%;
+}
+
+.title-main-content:after {
+    margin-right: -100%;
+}
+
+/* cover letter box */
+
+.cover-letter {
+    margin: 50px 0 0 0px;
+    padding: 0 50px 0 62px;
+}
+
+.cover-letter-text {
+    clear: both;
+    float: left;
+    font: 17px/22px Open Sans;
+    color: #40485d;
+    text-align: justify;
+}
+
+.cover-letter-text p {
+    margin: 0 0 25px 0;
+    clear: both;
+}
+
+.cover-letter-text a {
+    color: #40485d;
+    text-decoration: underline;
+}
+
+.cover-letter-text a:hover {
+    color: #40485d;
+    text-decoration: none;
+}
+
+.cover-letter-text ul {
+    margin: 0 0 30px 48px;
+    float: left;
+}
+
+.cover-letter-text ul li {
+    background: url("/images/black-list-bullet.png") 0 6px no-repeat;
+    padding: 0 0 0 28px;
+    list-style: none;
+    margin: 0 0 6px 0;
+}
+
+/* bootstrap gallery */
+.gallery-list {
+    margin: 69px 0 0 65px;
+}
+
+.gallery-list li {
+    list-style: none;
+    padding:0;
+    margin: 0 0 60px 0;
+}
+
+.gallery-list li a {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    margin: 0;
+}
+
+.gallery-list li img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+.gallery-list li span {
+    width: 100%;
+    background: rgba(65, 80, 112, 0.5);
+    text-transform: uppercase;
+    font: 22px/24px Open Sans Semibold;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 14px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.item-caption-list {
+    margin: 20px 0 0 18px;
+    padding: 0;
+}
+
+.item-caption-list li {
+    padding: 0 0 0 27px;
+    background: url("/images/black-list-bullet.png") 0 4px no-repeat;
+    font: 16px/18px Open Sans;
+    color: #313749;
+    margin: 0 0 5px 0;
+}
+
+.item-caption-list li a {
+    color: #313749;
+    text-decoration: underline;
+}
+
+.item-caption-list li a:hover {
+    text-decoration: none;
+}
+
+/* Light box */
+.lb-caption {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.back-link {
+    color: #313749;
+    text-decoration: underline;
+    font: 16px/22px Open Sans;
+    text-transform: uppercase;
+    margin: -20px 0 30px 64px;
+    float: left;
+}
+
+.back-link:hover {
+    color: #313749;
+    text-decoration: none;
+}
