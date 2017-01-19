@@ -44,7 +44,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .personal-skills-list li {
         clear: both;
     }
