@@ -241,6 +241,12 @@ div.ic-portfolio {
     margin: 48px 0 0 25px;
 }
 
+@media all and (max-width: 480px) {
+    .big-title-l-sidebar {
+        margin: 48px 0 0 15px;
+    }
+}
+
 h3.title-l-sidebar {
     text-transform: uppercase;
     color: #fff;
@@ -282,6 +288,12 @@ h3.title-l-sidebar {
     margin: 24px 0 0 65px;
 }
 
+@media all and (max-width: 480px) {
+    .l-sidebar-profile-text {
+        margin: 24px 0 0 55px;
+    }
+}
+
 .l-sidebar-profile-text a {
     text-decoration: underline;
 }
@@ -310,6 +322,12 @@ h3.title-l-sidebar {
     width: 90%;
 }
 
+@media all and (max-width: 480px) {
+    .l-sidebar-contact-info ul {
+        margin: 0 0 0 13px;
+    }
+}
+
 .l-sidebar-contact-info ul li {
     font: 18px/24px Open Sans;
     color: #fff;
@@ -334,6 +352,12 @@ h3.title-l-sidebar {
 .l-sidebar-social-links ul {
     width: 90%;
     margin: 0 0 0 21px;
+}
+
+@media all and (max-width: 480px) {
+    .l-sidebar-social-links ul{
+        margin: 0 0 0 13px;
+    }
 }
 
 .l-sidebar-social-links ul li {
@@ -369,6 +393,12 @@ h3.title-l-sidebar {
 -------------------------------*/
 .big-title-main-content {
     margin: 46px 0 0 25px;
+}
+
+@media all and (max-width: 480px) {
+    .big-title-main-content {
+        margin: 46px 0 0 15px;
+    }
 }
 
 h3.title-main-content {
@@ -443,11 +473,18 @@ h3.title-main-content {
     padding: 0 0 0 28px;
     list-style: none;
     margin: 0 0 6px 0;
+    text-align: left;
 }
 
 /* bootstrap gallery */
 .gallery-list {
     margin: 69px 0 0 65px;
+}
+
+@media all and (max-width: 480px) {
+    .gallery-list {
+        margin: 69px 0 0 54px;
+    }
 }
 
 .gallery-list li {

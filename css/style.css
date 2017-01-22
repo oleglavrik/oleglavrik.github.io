@@ -289,6 +289,12 @@ div.ic-certificates {
     margin: 48px 0 0 25px;
 }
 
+@media all and (max-width: 480px) {
+    .big-title-l-sidebar {
+        margin: 48px 0 0 15px;
+    }
+}
+
 h3.title-l-sidebar {
     text-transform: uppercase;
     color: #fff;
@@ -330,6 +336,12 @@ h3.title-l-sidebar {
     margin: 24px 0 0 65px;
 }
 
+@media all and (max-width: 480px) {
+    .l-sidebar-profile-text {
+        margin: 24px 0 0 55px;
+    }
+}
+
 .l-sidebar-profile-text a {
     text-decoration: underline;
 }
@@ -358,6 +370,12 @@ h3.title-l-sidebar {
     width: 90%;
 }
 
+@media all and (max-width: 480px) {
+    .l-sidebar-contact-info ul {
+        margin: 0 0 0 13px;
+    }
+}
+
 .l-sidebar-contact-info ul li {
     font: 18px/24px Open Sans;
     color: #fff;
@@ -375,6 +393,12 @@ h3.title-l-sidebar {
 -------------------------------*/
 .big-title-main-content {
     margin: 46px 0 0 25px;
+}
+
+@media all and (max-width: 480px) {
+    .big-title-main-content {
+        margin: 46px 0 0 15px;
+    }
 }
 
 h3.title-main-content {
@@ -424,6 +448,12 @@ h3.title-main-content {
     margin: 0 0 0 21px;
 }
 
+@media all and (max-width: 480px) {
+    .l-sidebar-social-links ul{
+        margin: 0 0 0 13px;
+    }
+}
+
 .l-sidebar-social-links ul li {
     list-style: none;
     margin: 0 0 4px 0;
@@ -455,6 +485,12 @@ h3.title-main-content {
 .user-experience-list {
     width: auto;
     margin: 24px 0 0 61px;
+}
+
+@media all and (max-width: 480px) {
+    .user-experience-list {
+        margin: 24px 0 0 51px;
+    }
 }
 
 .user-experience-list li {
@@ -497,6 +533,12 @@ h3.title-main-content {
 
 .personal-skills-list {
     margin: 27px 0 0 61px;
+}
+
+@media all and (max-width: 480px) {
+    .personal-skills-list {
+        margin: 27px 0 0 51px;
+    }
 }
 
 .personal-skills-list li {
