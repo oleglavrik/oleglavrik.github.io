@@ -476,6 +476,13 @@ h3.title-main-content {
     float: left;
 }
 
+@media all and (max-width: 480px) {
+    .cover-letter-text ul {
+        margin-left: 11px;
+
+    }
+}
+
 .cover-letter-text ul li {
     background: url("../images/black-list-bullet.png") 0 6px no-repeat;
     padding: 0 0 0 28px;
@@ -533,6 +540,13 @@ h3.title-main-content {
 .item-caption-list {
     margin: 20px 0 0 18px;
     padding: 0;
+}
+
+@media all and (max-width: 480px) {
+    .item-caption-list {
+        margin-left: 11px;
+
+    }
 }
 
 .item-caption-list li {
