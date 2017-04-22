@@ -81,6 +81,8 @@ a:hover {
     text-decoration: none;
 }
 
+hr { border-top: 1px solid #ccc; }
+
 /* icons settings */
 div[class*="ic-"],
 span[class*="ic-"],
@@ -553,16 +555,36 @@ h3.title-main-content {
     line-height: 18px;
 }
 
-.back-link {
-    color: #313749;
-    text-decoration: underline;
-    font: 16px/22px Open Sans;
+.float-link {
+    display: block;
+    background: #313749;
+    cursor: pointer;
+    z-index: 1;
+    margin: -5% -22px 0 0;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    padding: 5px 6px 6px 10px;
+    letter-spacing: 2px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+    -moz-box-shadow: 1px 0 2px #888;
+    -webkit-box-shadow: 1px 0 2px #888;
+    box-shadow: 1px 0 2px #888;
     text-transform: uppercase;
-    margin: -20px 0 30px 64px;
-    float: left;
+    box-sizing: border-box;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); /* для IE9 */
+    transform: rotate(90deg);
+    font:bold 15px/15px Open Sans;
+    box-sizing: border-box;
 }
 
-.back-link:hover {
-    color: #313749;
-    text-decoration: none;
+@media (max-width: 480px) {
+    .float-link {
+        display: none;
+    }
 }

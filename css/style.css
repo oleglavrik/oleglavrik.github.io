@@ -1,3 +1,5 @@
+
+
 /* set charset */
 @charset "UTF-8";
 
@@ -62,6 +64,7 @@ body {
     height: 100%;
     color: #6d6967;
     background: #f8f6f6;
+    position: relative;
 }
 
 ul {
@@ -553,4 +556,37 @@ h3.title-main-content {
     color: #181717;
     float: left;
     width: 40%;
+}
+
+.float-link {
+    display: block;
+    background: #313749;
+    cursor: pointer;
+    z-index: 1;
+    margin: -5% -44px 0 0;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    padding: 5px 6px 6px 10px;
+    letter-spacing: 2px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+    -moz-box-shadow: 1px 0 2px #888;
+    -webkit-box-shadow: 1px 0 2px #888;
+    box-shadow: 1px 0 2px #888;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); /* для IE9 */
+    transform: rotate(90deg);
+    font:bold 15px/15px Open Sans;
+}
+
+@media (max-width: 480px) {
+    .float-link {
+        display: none;
+    }
 }
