@@ -584,9 +584,3 @@ h3.title-main-content {
     transform: rotate(90deg);
     font:bold 15px/15px Open Sans;
 }
-
-@media (max-width: 480px) {
-    .float-link {
-        display: none;
-    }
-}

@@ -582,9 +582,3 @@ h3.title-main-content {
     font:bold 15px/15px Open Sans;
     box-sizing: border-box;
 }
-
-@media (max-width: 480px) {
-    .float-link {
-        display: none;
-    }
-}
