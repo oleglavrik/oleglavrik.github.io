@@ -516,11 +516,11 @@ h3.title-main-content {
     margin: 0;
 }
 
-.gallery-list li img {
-    width: 100%;
-    min-height: 200px;
-    max-height: 400px;
-}
+/*.gallery-list li img {*/
+    /*width: 100%;*/
+    /*min-height: 200px;*/
+    /*max-height: 400px;*/
+/*}*/
 
 .gallery-list li span {
     width: 100%;
